@@ -1,0 +1,50 @@
+#home {
+	
+}
+
+
+#about {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
+#contact {
+    display: none;
+}
+
+
+.dropdown-menu{
+	background-color: #333;
+}
+
+/*
+.dropdown:hover .dropdown-menu {
+   display: block;
+}
+*/
+
+ul.dropdown-menu > li > a:link{
+	color: #9D9D9D;
+}
+
+ul.dropdown-menu > li > a:visited{
+	color: #9D9D9D;
+}
+
+
+
+ul.dropdown-menu > li > a:hover{
+	color: black;
+}
+
+.fade {
+opacity: 0;
+-webkit-transition: opacity .35s linear;
+  -moz-transition: opacity .35s linear;
+   -ms-transition: opacity .35s linear;
+	-o-transition: opacity .35s linear;
+	   transition: opacity .35s linear;
+}
