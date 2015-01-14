@@ -44,7 +44,8 @@ opacity: 0;
 }
 
 
-/* Add hover functionality to dropdown menu*/
+/* Add hover functionality to dropdown menu*/ 
+/*
 .sidebar-nav {
     padding: 9px 0;
 }
@@ -87,3 +88,4 @@ opacity: 0;
 .dropdown:hover .dropdown-menu {
 	display:block;
 }
+*/
