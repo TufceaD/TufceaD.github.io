@@ -36,3 +36,8 @@ textarea {
 	font-size:2em;
 }
 
+/* Mix it up styling */
+
+#Container .mix{
+    display: none;
+}

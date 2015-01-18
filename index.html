@@ -14,7 +14,8 @@
     <![endif]-->
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -25,7 +26,13 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	
+	<!-- MixItUp -->
+	<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+	
+	<!-- Custom CSS -->
 	<link href="css/main.css" rel="stylesheet">
+	
+	<!-- Custom Javascript -->
 	<script src="js/myscript.js"></script>
 	
 
@@ -79,9 +86,12 @@
 	
 			<p>I am currently looking for a job! <a class="custom-tab" href="#tab_contact">Hire me! </a></p>
 			
-			<p> It only takes one counter example to disprove a theorem. 
-			
-			My mathematical training has taught me the importance of paying attention to the details, as edge cases often make or break a proof, algorithm or solution. </p>
+			<p> Mathematicians have always been known for their extreme attention to detail and with good cause: It only takes one counter example to disprove a theorem. But by the same token, it only takes one bug for an angry client to call you in the middle of the night. Sometimes there's no other way around it, you just gotta sit down and get dirty, double check all your edge-cases and test everything you can (hopefully you're automating that!)
+			</p>
+	
+			<p> Physicists on the other hand, have learned that good enough is often the best you can do. Nature is extremely complex and only the simplest problems have exact answers. They are masters of the approximation, and by focusing on the essence of the problem they'll give you an answer you can write on the <a href="http://en.wikipedia.org/wiki/Back-of-the-envelope_calculation">back of an envelope</a>. At the end of the day, whether you're on a tight deadline or you just need to do more with less, physicists are some of the best problem solvers. </p>
+	
+	
 	
 	
 		</div>
@@ -167,15 +177,38 @@
 		<div class="jumbotron tab-pane fade" id="tab_projects">
 			<h1>Projects</h1> 
 			
+			
+
+			
 			<p>Under construction</p>
+			<div class="controls">
+			<button class="filter" data-filter="all">Show All</button>
+			<button class="filter" data-filter=".category-1">Category 1</button>
+			<button class="filter" data-filter=".category-2">Category 2</button>
+
+			<button class="sort" data-sort="default">Default</button>
+			<button class="sort" data-sort="myorder:asc">Ascending</button>
+			<button class="sort" data-sort="myorder:desc">Descending</button>
+			<button class="sort" data-sort="random">Random</button>
+			</div>
+
+
+			<div id="Container" class="container">
+			<div class="mix category-1" data-myorder="2"> 2</div>
+			<div class="mix category-2" data-myorder="4">4</div>
+			<div class="mix category-1" data-myorder="1">1</div>
+			<div class="mix category-2" data-myorder="8">8</div>
+			</div>
 		
 		</div>
-	
-	
-	
-	<div class="jumbotron tab-pane fade" id="tab_contact">
 		
-		<div class="container">
+	
+	
+	
+	
+		<div class="jumbotron tab-pane fade" id="tab_contact">
+		
+			<div class="container">
 		
 			<h1> Contact Me!</h1>
 			
@@ -211,5 +244,6 @@
   
 	
 	</div>
+	
 </body>
 </html>
