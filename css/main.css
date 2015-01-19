@@ -36,8 +36,95 @@ textarea {
 	font-size:2em;
 }
 
+ /* responsive button sizes */
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:85%;
+    line-height: 1;
+    border-radius:1px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:2px 5px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+}
+
+
+
+
+
+
 /* Mix it up styling */
 
-#Container .mix{
+#porfolio .mix{
     display: none;
 }
+
+.container .mix{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+}
+
+.container .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.container .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.container .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 8%;
+  font-weight: 700;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 31%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 24.5%;
+  }
+}
+
+
+
+ 

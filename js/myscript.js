@@ -1,6 +1,6 @@
 //Toggle drop-down menu on hover
 
-if (document.documentElement.clientWidth > 900) {
+if (document.documentElement.clientWidth > 992) {
 	
 	$( document ).ready(function() {
         $(".dropdown").hover(
@@ -25,22 +25,20 @@ $( document ).ready(function() {
   $("#my_age").text( age() );
 });
 
+//Custom link class that points to a tab
 $( document ).ready(function(){
 $('a.custom-tab').click(function(){
 $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger('click');
 });
  });
  
-$( document).ready(function(){
-$('#Container').mixItUp();
- });
- 
-
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-      var target = $(e.target).attr('href');
+//Activate mixitup within a tab
+ $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+  var target = $(e.target).attr('href');
       if (target === '#tab_projects') {
-        if (!$('#Container').mixItUp('isLoaded')) {
-          $('#Container').mixItUp();
+        if (!$('#portfolio').mixItUp('isLoaded')) {
+          $('#portfolio').mixItUp();
         }
       }
-    });
+});
+
