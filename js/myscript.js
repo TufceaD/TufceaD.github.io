@@ -42,3 +42,20 @@ $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger
       }
 });
 
+
+
+
+//Clicking on accordion scrolls to the header
+ $(function () {
+    $('#accordion').on('shown.bs.collapse', function (e) {
+    var target = $('a[data-toggle="collapse"][href="#'+ $(e.target).attr('id')+ '"]'
+	//target is the accordion element that points to the shown text
+	);
+    $('html,body').animate({
+		scrollTop: target.offset().top -10
+    }, 500); 
+        
+});
+});
+
+
