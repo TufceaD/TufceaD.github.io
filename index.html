@@ -41,7 +41,7 @@
 <body>
 
 
-	<nav class="navbar navbar-inverse navvar-fixed-top">
+	<nav class="navbar navbar-inverse navvar-fixed-top" id="topNav">
 	<div class="container-fluid">
     <div class="navbar-header">
 	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -53,13 +53,13 @@
     </div>
    
 
-	 <ul class="nav navbar-nav navbar-right">
+	 <ul class="nav nav-tabs navbar-nav navbar-right">
         <div class="collapse navbar-collapse" id="myNavbar">
 		<ul class="nav navbar-nav">
-        <li class="active"><a data-toggle="tab" href="#tab_home">Home</a></li>
-		<li><a data-toggle="tab" href="#tab_about">About Me</a></li> 
-        <li><a data-toggle="tab" href="#tab_projects">Projects </a> </li>  
-        <li><a data-toggle="tab" href="#tab_contact">Contact</a></li> 
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+		<li><a data-toggle="tab" href="#about">About Me</a></li> 
+        <li><a data-toggle="tab" href="#projects">Projects </a> </li>  
+        <li><a data-toggle="tab" href="#contact">Contact</a></li> 
 		
 		<li class="dropdown">
 		 
@@ -81,12 +81,12 @@
 	
 	<div class="container tab-content">
 	
-		<div class="jumbotron tab-pane active fade in" id="tab_home">
+		<div class="jumbotron tab-pane fade in active " id="home">
 			<h1>Welcome to my personal site! </h1> 
 	
 			<div class="alert alert-danger text-center" role="alert">Warning! Website still under construction</div>
 			
-			<p>I am currently looking for a job! <a class="custom-tab" href="#tab_contact">Hire me! </a></p>
+			<p>I am currently looking for a job! <a class="custom-tab" href="#contact">Hire me! </a></p>
 			
 			<p> Mathematicians have always been known for their extreme attention to detail and with good cause: It only takes one counter example to disprove a theorem. But by the same token, it only takes one bug for an angry client to call you in the middle of the night. Sometimes there's no other way around it, you just gotta sit down and get dirty, double check all your edge-cases and test everything you can (hopefully you're automating that!)
 			</p>
@@ -100,15 +100,16 @@
 	
 	
 	
-		<div class="jumbotron tab-pane fade"  id="tab_about" >
-			
+		<div class="jumbotron tab-pane fade"  id="about" >
+		
+		<h1> About me! </h1>
 			
 		<div class="panel-group" id="accordion">
 		
 		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h2 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Who am I?</a>
+			<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				<h2 class="panel-title" >
+                Who am I?
 				</h2>
 			</div>
 		<div id="collapseOne" class="panel-collapse collapse in">
@@ -122,9 +123,9 @@
 		</div>
 			
 		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h2 class="panel-title">
-				<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Background and education</a>
+			<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				<h2 class="panel-title" >
+				Background and education
 				</h2>
 			</div>
         <div id="collapseTwo" class="panel-collapse collapse">
@@ -139,9 +140,9 @@
 		</div>
 			
 		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h2 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Interests</a>
+			<div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				<h2 class="panel-title" >
+                 Interests
 				</h2>
 			</div>
         <div id="collapseThree" class="panel-collapse collapse">
@@ -160,9 +161,9 @@
 		</div>
 		
 		<div class="panel panel-default">
-        <div class="panel-heading">
-			<h2 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Hobbies</a>
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+			<h2 class="panel-title" >
+             Hobbies
             </h2>
         </div>
         <div id="collapseFour" class="panel-collapse collapse">
@@ -180,7 +181,7 @@
 	
 		
 		
-		<div class="jumbotron tab-pane fade" id="tab_projects">
+		<div class="jumbotron tab-pane fade" id="projects">
 			<h1>Projects</h1> 
 			
 			<div class="alert alert-danger text-center" role="alert">Warning! Section under construction</div>
@@ -220,7 +221,7 @@
 	
 	
 	
-		<div class="jumbotron tab-pane fade" id="tab_contact">
+		<div class="jumbotron tab-pane fade" id="contact">
 		
 			<div class="container">
 		

@@ -35,7 +35,7 @@ $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger
 //Activate mixitup within a tab
  $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
   var target = $(e.target).attr('href');
-      if (target === '#tab_projects') {
+      if (target === '#projects') {
         if (!$('#portfolio').mixItUp('isLoaded')) {
           $('#portfolio').mixItUp();
         }
@@ -48,14 +48,35 @@ $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger
 //Clicking on accordion scrolls to the header
  $(function () {
     $('#accordion').on('shown.bs.collapse', function (e) {
-    var target = $('a[data-toggle="collapse"][href="#'+ $(e.target).attr('id')+ '"]'
+    var target = $('[data-toggle="collapse"][href="#'+ $(e.target).attr('id')+ '"]'
 	//target is the accordion element that points to the shown text
 	);
     $('html,body').animate({
-		scrollTop: target.offset().top -10
+		scrollTop: target.offset().top - 8
     }, 500); 
         
 });
 });
 
+//Enable bookmarking, linking tabs from outside, etc
+$(document).ready(function() {
+  /* Jump on good tab based on anchor; for page reloads or links */	
+  if(location.hash) {
+	$('.active').hide(); // Prevents flicker (might not work for a page that loads slowly)
+    $('a[href=' + location.hash + ']').tab('show');
+  }
+ 
+  /* Update hash based on tab, basically restores browser default behaviour to
+     fix bootstrap tabs */
+  $(document.body).on("click", "a[data-toggle]", function(event) {
+    location.hash = this.getAttribute("href").substr(1); scrollTo(0,0);
+  });
+});
+ 
+/* on history back activate the tab of the location hash
+   if exists or the default tab if no hash exists */
+$(window).on('popstate', function() {
+  var anchor = location.hash || $("a[data-toggle=tab]").first().attr("href");
+  $('a[href=' + anchor + ']').tab('show');
+});
 
