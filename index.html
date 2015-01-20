@@ -13,15 +13,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- jQuery 1.11.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-	
-	
+		
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -35,13 +31,11 @@
 	<!-- Custom Javascript -->
 	<script src="js/myscript.js"></script>
 	
-
 </head>
 
 <body>
 
-
-	<nav class="navbar navbar-inverse navvar-fixed-top" id="topNav">
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="topNav">
 	<div class="container-fluid">
     <div class="navbar-header">
 	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -76,29 +70,23 @@
      </ul>
    
 	</div>
-	</nav>
-
+	</nav> <!-- End of topbar -->
 	
-	<div class="container tab-content">
+	<div class="container tab-content"> 
 	
 		<div class="jumbotron tab-pane fade in active " id="home">
+		
 			<h1>Welcome to my personal site! </h1> 
 	
 			<div class="alert alert-danger text-center" role="alert">Warning! Website still under construction</div>
 			
-			<p>I am currently looking for a job! <a class="custom-tab" href="#contact">Hire me! </a></p>
+			<p>I am currently looking for a job! <a class="custom-tab" href="#contact">Hire me!</a></p>
 			
-			<p> Mathematicians have always been known for their extreme attention to detail and with good cause: It only takes one counter example to disprove a theorem. But by the same token, it only takes one bug for an angry client to call you in the middle of the night. Sometimes there's no other way around it, you just gotta sit down and get dirty, double check all your edge-cases and test everything you can (hopefully you're automating that!)
-			</p>
+			<p> Mathematicians have always been known for their extreme attention to detail and with good cause: It only takes one counter example to disprove a theorem. But by the same token, it only takes one bug for an angry client to call you in the middle of the night. Sometimes there's no other way around it, you just gotta sit down and get dirty, double check all your edge-cases and test everything you can (hopefully you're automating that!)</p>
 	
-			<p> Physicists on the other hand, have learned that good enough is often the best you can do. Nature is extremely complex and only the simplest problems have exact answers. They are masters of the approximation, and by focusing on the essence of the problem they'll give you an answer you can write on the <a href="http://en.wikipedia.org/wiki/Back-of-the-envelope_calculation">back of an envelope</a>. At the end of the day, whether you're on a tight deadline or you just need to do more with less, physicists are some of the best problem solvers. </p>
+			<p> Physicists on the other hand, have learned that good enough is often the best you can do. Nature is extremely complex and only the simplest problems have exact answers. They are masters of the approximation, and by focusing on the essence of the problem they'll give you an answer you can write on the <a href="http://en.wikipedia.org/wiki/Back-of-the-envelope_calculation">back of an envelope</a>. At the end of the day, whether you're on a tight deadline or you just need to do more with less, physicists are some of the best problem solvers.</p>
 	
-	
-	
-	
-		</div>
-	
-	
+		</div> <!-- End of tab home -->
 	
 		<div class="jumbotron tab-pane fade"  id="about" >
 		
@@ -116,8 +104,7 @@
             <div class="panel-body">
 				<p>My name is Daniel Tufcea and I am a <span id="my_age"></span> years old graduate trying to become the best version of himself. I believe in continually learning new things and working on your weaknesses as a path to self-improvement. </p>
 			
-				<p>I aspire to be a developer, master new technologies and build cool stuff. I have experience with MATLAB, Python, Java and a little bit of C++. I am currently learning web development: HTML5, CSS3, Javascript (jQuery, AnglularJS), mySQL, PHP. In the future, I plan to try out some graphics and game development through <a href="http://peerjs.com">PeerJs</a>, <a href="http://threejs.org">ThreeJS</a> and <a href="http://paperjs.org">PaperJS</a>. I have heard good things about and plan to check out Ruby on Rails and Django.
-				</p>
+				<p>I aspire to be a developer, master new technologies and build cool stuff. I have experience with MATLAB, Python, Java and a little bit of C++. I am currently learning web development: HTML5, CSS3, Javascript (jQuery, AnglularJS), mySQL, PHP. In the future, I plan to try out some graphics and game development through <a href="http://peerjs.com">PeerJs</a>, <a href="http://threejs.org">ThreeJS</a> and <a href="http://paperjs.org">PaperJS</a>. I have heard good things about and plan to check out Ruby on Rails and Django. </p>
             </div>
         </div>
 		</div>
@@ -177,9 +164,7 @@
         </div>
         </div>
 		</div>
-		</div>
-	
-		
+		</div> <!-- End of tab about -->
 		
 		<div class="jumbotron tab-pane fade" id="projects">
 			<h1>Projects</h1> 
@@ -215,12 +200,8 @@
 			</div>
 			
 		
-		</div>
+		</div> <!-- End of tab projects -->
 		
-	
-	
-	
-	
 		<div class="jumbotron tab-pane fade" id="contact">
 		
 			<div class="container">
@@ -231,11 +212,13 @@
 			
 			<form role="form" action="http://formspree.io/d.tufcea@gmail.com" method="POST">
 		
-			<div class="form-group">
+			<div class="form-group ">				
 			<label for="email">Email address:</label>
-			<input type="email" class="form-control" id="email" placeholder="John.Smith@example.com" name="_replyto">
+			<div class="input-group">
+			<span class="input-group-addon" id="basic-addon1">@</span>
+			<input type="email" class="form-control" id="email" placeholder="John.Smith@example.com" name="_replyto" aria-describedby="basic-addon1">
 			</div>
-			
+			</div>
 			<div class="form-group">
 			<label for="subject">Subject:</label>
 			<input type="text" class="form-control" id="subject" name="_subject">
@@ -255,10 +238,9 @@
 			</form>
 		</div>
 
-	</div>
+	</div> <!-- End of tab contact -->
   
-	
-	</div>
+	</div> <!-- End of main container -->
 	
 </body>
 </html>

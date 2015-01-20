@@ -16,6 +16,9 @@ ul.dropdown-menu > li > a:hover{
 	color: black;
 }
 
+/* Add padding to body to prevent navbar and content overlapping*/
+body { padding-top: 70px; }
+
 /* Styling the fading effect when switching tabs*/
 
 .fade {
@@ -154,6 +157,9 @@ textarea {
     width: 24.5%;
   }
 }
+
+
+
 
 
 
