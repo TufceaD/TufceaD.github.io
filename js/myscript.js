@@ -62,8 +62,12 @@ $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger
 $(document).ready(function() {
   /* Jump on good tab based on anchor; for page reloads or links */	
   if(location.hash) {
-	$('.active').hide(); // Prevents flicker (might not work for a page that loads slowly)
+
+	if(location.hash !="#home"){
+	$('.tab-pane.active').hide(); // Prevents flicker (might not work for a page that loads slowly)
+	}
     $('a[href=' + location.hash + ']').tab('show');
+	setTimeout(function(){$('#home').css("display","");},1000); // Unhide default tab after animation
   }
  
   /* Update hash based on tab, basically restores browser default behaviour to

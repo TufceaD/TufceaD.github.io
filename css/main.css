@@ -1,5 +1,5 @@
 
-/* Styling the top navbar */
+/* Styling the top navbar */ 
 .dropdown-menu{
 	background-color: #333;
 }
@@ -17,6 +17,7 @@ ul.dropdown-menu > li > a:hover{
 }
 
 /* Styling the fading effect when switching tabs*/
+
 .fade {
 	opacity: 0;
 	-webkit-transition: opacity .35s linear;
@@ -27,6 +28,7 @@ ul.dropdown-menu > li > a:hover{
 }
 
 /* Sets a maximum for text areas, e.g. contact page*/
+
 textarea {
     max-width: 100%; 
 }
@@ -37,6 +39,7 @@ textarea {
 }
 
  /* responsive button sizes */
+ 
 @media (max-width: 768px) {
   .btn-responsive {
     padding:2px 4px;
@@ -72,7 +75,7 @@ textarea {
 }
 
 
-button{
+.btn-mix{
   display: inline-block;
   padding: .4em .8em;
   background: #666;
@@ -84,11 +87,11 @@ button{
   cursor: pointer;
 }
 
-button.active{
+.btn-mix.active{
   background: #68b8c4;
 }
 
-button:focus{
+.btn-mix:focus{
   outline: 0 none;
 }
 
