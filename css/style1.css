@@ -1,0 +1,166 @@
+
+/* Styling the top navbar */ 
+.dropdown-menu{
+	background-color: #333;
+}
+
+ul.dropdown-menu > li > a:link{
+	color: #9D9D9D;
+}
+
+ul.dropdown-menu > li > a:visited{
+	color: #9D9D9D;
+}
+
+ul.dropdown-menu > li > a:hover{
+	color: black;
+}
+
+/* Add padding to body to prevent navbar and content overlapping*/
+body { padding-top: 70px; }
+
+/* Styling the fading effect when switching tabs*/
+
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity .35s linear;
+	-moz-transition: opacity .35s linear;
+	-ms-transition: opacity .35s linear;
+	-o-transition: opacity .35s linear;
+	transition: opacity .35s linear;
+}
+
+/* Sets a maximum for text areas, e.g. contact page*/
+
+textarea {
+    max-width: 100%; 
+}
+
+
+.panel-title{
+	font-size:2em;
+}
+
+ /* responsive button sizes */
+ 
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:85%;
+    line-height: 1;
+    border-radius:1px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:2px 5px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+}
+
+
+
+
+
+
+/* Mix it up styling */
+
+#porfolio .mix{
+    display: none;
+}
+
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+
+.btn-mix{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-mix.active{
+  background: #68b8c4;
+}
+
+.btn-mix:focus{
+  outline: 0 none;
+}
+
+.container-mix{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #68b8c4;
+  
+  -webkit-backface-visibility: hidden;
+}
+
+.container-mix .mix,
+.container-mix .gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.container-mix .mix{
+  text-align: left;
+  background: #03899c;
+  margin-bottom: 2%;
+  display: none;
+}
+
+.container-mix .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.container .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.container-mix .mix:after{
+  content: attr(data-myorder);
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 8%;
+  font-weight: 700;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 31%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 24.5%;
+  }
+}
+
+
+
+
+
+
+ 
