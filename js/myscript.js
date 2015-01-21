@@ -51,7 +51,7 @@ $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger
     var target = $('[data-toggle="collapse"][href="#'+ $(e.target).attr('id')+ '"]'
 	//target is the accordion element that points to the shown text
 	);
-    $('html,body').animate({
+    $('html,body, .wrapper').animate({
 		scrollTop: target.offset().top - 8
     }, 500); 
         

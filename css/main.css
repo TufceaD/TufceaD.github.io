@@ -19,6 +19,21 @@ ul.dropdown-menu > li > a:hover{
 /* Add padding to body to prevent navbar and content overlapping*/
 body { padding-top: 70px; }
 
+body > .wrapper {
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+	 overflow-y: auto
+}
+
+#content{
+	top: 20px;
+	position: relative;
+}
+
+
 /* Styling the fading effect when switching tabs*/
 
 .fade {
