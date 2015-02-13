@@ -13,11 +13,11 @@ if (document.documentElement.clientWidth > 992) {
 
 //Automatically update my age
 function age() {
-      var birthday = new Date(1990,7,28,0,0,0,0);
-  var ageDifMs = Date.now() - birthday.getTime();
-  var ageDate = new Date(ageDifMs); // miliseconds from epoch
-  var age = Math.abs(ageDate.getUTCFullYear() - 1970);
-  return age;
+    var birthday = new Date(1990,7,28,0,0,0,0);
+	var ageDifMs = Date.now() - birthday.getTime();
+	var ageDate = new Date(ageDifMs); // miliseconds from epoch
+	var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+	return age;
 }
 
 $( document ).ready(function() {
@@ -26,19 +26,19 @@ $( document ).ready(function() {
 
 //Custom link class that points to a tab
 $( document ).ready(function(){
-$('a.custom-tab').click(function(){
-$('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger('click');
+	$('a.custom-tab').click(function(){
+	$('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger('click');
+	});
 });
- });
  
 //Activate mixitup within a tab
  $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
-  var target = $(e.target).attr('href');
-      if (target === '#projects') {
-        if (!$('#portfolio').mixItUp('isLoaded')) {
-          $('#portfolio').mixItUp();
-        }
-      }
+	var target = $(e.target).attr('href');
+	if (target === '#projects') {
+		if (!$('#portfolio').mixItUp('isLoaded')) {
+			$('#portfolio').mixItUp();
+		}
+	}
 });
 
 
@@ -90,7 +90,7 @@ $(window).on('popstate', function() {
 // resize mixitup container when screen is very small
 
 function setMixContainerHeight(){
-var h = $(window).height();
+		var h = $(window).height();
         var w = $(window).width();
 
         if(w<768) {

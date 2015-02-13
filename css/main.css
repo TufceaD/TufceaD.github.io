@@ -1,42 +1,40 @@
-
-/* Styling the top navbar */ 
-.dropdown-menu{
+/* Styling the top navbar */
+.dropdown-menu {
 	
 }
 
-ul.dropdown-menu > li > a:link{
+ul.dropdown-menu>li>a:link {
 	color: #9D9D9D;
 }
 
-ul.dropdown-menu > li > a:visited{
+ul.dropdown-menu>li>a:visited {
 	color: #9D9D9D;
 }
 
-ul.dropdown-menu > li > a:hover{
+ul.dropdown-menu>li>a:hover {
 	color: black;
 }
 
 /* Add padding to body to prevent navbar and content overlapping*/
-body { padding-top: 70px; }
-
-body > .wrapper {
-    position: fixed;
-    top: 50px;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-	 overflow-y: auto
+body {
+	padding-top: 70px;
 }
 
-#content{
+body>.wrapper {
+	position: fixed;
+	top: 50px;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	overflow-y: auto
+}
+
+#content {
 	top: 20px;
 	position: relative;
 }
 
-
-
 /* Styling the fading effect when switching tabs*/
-
 .fade {
 	opacity: 0;
 	-webkit-transition: opacity .35s linear;
@@ -47,283 +45,283 @@ body > .wrapper {
 }
 
 /* Sets a maximum for text areas, e.g. contact page*/
-
 textarea {
-    max-width: 100%; 
+	max-width: 100%;
 }
 
-.panel-title{
-	font-size:2em;
+.panel-title {
+	font-size: 2em;
 }
 
- /* responsive button sizes */
- 
-@media (max-width: 768px) {
-  .btn-responsive {
-    padding:2px 4px;
-    font-size:85%;
-    line-height: 1;
-    border-radius:1px;
-  }
+/* responsive button sizes */
+@media ( max-width : 768px) {
+	.btn-responsive {
+		padding: 2px 4px;
+		font-size: 85%;
+		line-height: 1;
+		border-radius: 1px;
+	}
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
-  .btn-responsive {
-    padding:2px 5px;
-    font-size:90%;
-    line-height: 1.2;
-  }
+@media ( min-width : 769px) and (max-width: 992px) {
+	.btn-responsive {
+		padding: 2px 5px;
+		font-size: 90%;
+		line-height: 1.2;
+	}
 }
-
 
 /* Home picture */
-
 #homePicture {
-width: 500px;
-padding: 1% 0% 2% 4%;
-float: right;
+	width: 500px;
+	padding: 1% 0% 2% 4%;
+	float: right;
 }
 
-@media (max-width: 768px) {
- #homePicture {
-width: 100%;
-padding: 1% 2% 2% 2%;
-}
+@media ( max-width : 768px) {
+	#homePicture {
+		width: 100%;
+		padding: 1% 2% 2% 2%;
+	}
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
- #homePicture {
-width: 300px;
-padding: 1% 0% 2% 2%;
-}
+@media ( min-width : 769px) and (max-width: 1200px) {
+	#homePicture {
+		width: 300px;
+		padding: 1% 0% 2% 2%;
+	}
 }
 /* Make contact page slimmer */
 #contact {
-max-width: 800px;
-margin-left: auto;
-margin-right: auto;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Accordion and about me picture*/
-
 .panel-heading {
 	cursor: pointer;
 }
 
-#accordion{
-width: 50%;
-float: none;
+#accordion {
+	width: 50%;
+	float: none;
 }
 
-#aboutPicture{
-width: 50%;
-padding: 0% 0% 2% 2%;
-float: right;
+#aboutPicture {
+	width: 50%;
+	padding: 0% 0% 2% 2%;
+	float: right;
 }
 
 #about {
-min-height:  810px;
+	min-height: 810px;
 }
 
-@media (max-width: 768px) {
- #aboutPicture {
-width: 100%;
-padding: 0% 2% 2% 2%;
-float: none;
+@media ( max-width : 768px) {
+	#aboutPicture {
+		width: 100%;
+		padding: 0% 2% 2% 2%;
+		float: none;
+	}
+	#accordion {
+		width: 100%;
+		float: none;
+	}
 }
 
-#accordion{
-width: 100%;
-float: none;
+@media ( min-width : 769px) and (max-width: 1200px) {
+	#aboutPicture {
+		width: 40%;
+		padding: 0% 0% 2% 2%;
+		float: right;
+	}
+	#accordion {
+		width: 60%;
+	}
 }
 
+@media ( min-width : 769px) and (max-width: 992px) {
+	#about {
+		min-height: 450px;
+	}
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
- #aboutPicture {
-width: 40%;
-padding: 0% 0% 2% 2%;
-float: right;
-}
-
-#accordion{
-width: 60%;
-}
-}
-@media (min-width: 769px) and (max-width: 992px) {
-#about {
-min-height:  450px;
-}
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-#about {
-min-height:  565px;
-}
+@media ( min-width : 993px) and (max-width: 1200px) {
+	#about {
+		min-height: 565px;
+	}
 }
 /* Mix it up styling */
-
-#porfolio .mix{
-    display: none;
+.mix {
+	display: none;
 }
 
-.controls{
-  padding: 2%;
-  background: #333;
-  color: #eee;
-  margin-top: 4%;
+.controls {
+	padding: 2%;
+	background: #333;
+	color: #eee;
+	margin-top: 4%;
 }
 
-
-.btn-mix{
-  display: inline-block;
-  padding: .4em .8em;
-  background: #666;
-  border: 0;
-  color: #ddd;
-  border-radius: 4px;
-  cursor: pointer;
+.btn-mix {
+	display: inline-block;
+	padding: .4em .8em;
+	background: #666;
+	border: 0;
+	color: #ddd;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
-.btn-mix.active{
-  background: #68b8c4;
+.btn-mix.active {
+	background: #68b8c4;
 }
 
-.btn-mix:focus{
-  outline: 0 none;
+.btn-mix:focus {
+	outline: 0 none;
 }
 
-.container-mix{
-  padding: 2% 2% 0;
-  text-align: justify;
-  background: #68b8c4;
-  
-  -webkit-backface-visibility: hidden;
+.container-mix {
+	padding: 2% 2% 0;
+	text-align: justify;
+	background: #68b8c4;
+	/* Causes problem with image loading offscreen
+  -webkit-backface-visibility: hidden; 
+  */
 }
 
-.container-mix .mix{
-  display: inline-block;
-  width: 49%;
-}
-.container-mix .gap{
-  display: inline-block;
-  width: 49%;
-}
-
-.container-mix .mix{
-  text-align: left;
-  background: #03899c;
-  margin-bottom: 2%;
-  padding-bottom: 0;
-  display: none;
-}
-
-.container-mix .mix.category-JS{
-  border-top: 4px solid limegreen;
-}
-
-.container .mix.category-HTML{
-  border-top: 4px solid yellow;
-}
-
-.container .mix#MoreToCome{
-  border-top: 4px solid red;
-}
-
-.container-mix .mix:after{
-  content: '';
-  color: white;
-  display: inline-block;
-  vertical-align: top;
-  padding: 4% 8%; 
-}
-
-.container .mix:before{
-  content: '';
-  display: inline-block;
-  padding-top: 10px;
-}
-
-.container-mix .container{
- position: relative;
-}
-
-.container-mix .container img{
-width: 92%;
-left: 4%;
-bottom: -4%;
-position: absolute;
-}
- .container-mix .container p{
-color: black;
-text-align: center;
-}
-
-
-@media all and (min-width: 480px){
-  .container .mix{
-	width: 100%;
-	}
-  .container .gap{
-    width: 100%;
-	}
-  .container-mix .container{
-	height: 350px;
-	}
-  .container-mix .container p{
-	font-size: 150%;
-	
-	}
-}
-@media all and (min-width: 768px){
-  .container .mix{
+.container-mix .mix {
+	display: inline-block;
 	width: 49%;
-	}
-  .container .gap{
-    width: 49%;
-	}
-   .container-mix .container{
-	height: 200px;
-	}
-  .container-mix .container p{
-	font-size: 125%;
-	}
 }
 
-@media all and (min-width: 992px){
-  .container .mix{
+.container-mix .gap {
+	display: inline-block;
 	width: 49%;
+}
+
+.container-mix .mix {
+	text-align: left;
+	background: #03899c;
+	margin-bottom: 2%;
+	padding-bottom: 0;
+	display: none;
+}
+
+.container-mix .mix.category-JS {
+	border-top: 4px solid limegreen;
+}
+
+.container .mix.category-HTML {
+	border-top: 4px solid yellow;
+}
+
+.container .mix#MoreToCome {
+	border-top: 4px solid red;
+}
+
+.container-mix .mix:after {
+	content: '';
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	padding: 4% 8%;
+}
+
+.container .mix:before {
+	content: '';
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.container-mix .container {
+	position: relative;
+}
+
+.container-mix .container img {
+	width: 92%;
+	left: 4%;
+	bottom: -4%;
+	position: absolute;
+}
+
+.container-mix .container p {
+	color: black;
+	text-align: center;
+}
+
+@media all and (max-width: 480px) {
+	.container .mix {
+		width: 100%;
 	}
-  .container .gap{
-    width: 49%;
+	.container .gap {
+		width: 100%;
 	}
-   .container-mix .container{
-	height: 250px;
+	.container-mix .container {
+		height: 350px;
 	}
-  .container-mix .container p{
-	font-size: 125%;
+	.container-mix .container p {
+		font-size: 100%;
 	}
 }
 
-@media all and (min-width: 1200px){
-  .container .mix{
-	width: 31%;
+@media all and (min-width: 480px) {
+	.container .mix {
+		width: 100%;
 	}
-  .container .gap{
-    width: 31%;
+	.container .gap {
+		width: 100%;
 	}
-  
-     .container-mix .container{
-	height: 180px;
+	.container-mix .container {
+		height: 350px;
 	}
-  .container-mix .container p{
-	font-size: 100%;
+	.container-mix .container p {
+		font-size: 150%;
 	}
-
-
 }
 
+@media all and (min-width: 768px) {
+	.container .mix {
+		width: 49%;
+	}
+	.container .gap {
+		width: 49%;
+	}
+	.container-mix .container {
+		height: 200px;
+	}
+	.container-mix .container p {
+		font-size: 125%;
+	}
+}
 
+@media all and (min-width: 992px) {
+	.container .mix {
+		width: 49%;
+	}
+	.container .gap {
+		width: 49%;
+	}
+	.container-mix .container {
+		height: 250px;
+	}
+	.container-mix .container p {
+		font-size: 125%;
+	}
+}
 
-
-
- 
+@media all and (min-width: 1200px) {
+	.container .mix {
+		width: 31%;
+	}
+	.container .gap {
+		width: 31%;
+	}
+	.container-mix .container {
+		height: 180px;
+	}
+	.container-mix .container p {
+		font-size: 100%;
+	}
+}
