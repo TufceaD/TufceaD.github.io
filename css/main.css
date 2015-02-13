@@ -151,12 +151,12 @@ width: 60%;
 }
 }
 @media (min-width: 769px) and (max-width: 992px) {
-#about.jumbotron {
+#about {
 min-height:  450px;
 }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-#about.jumbotron {
+#about {
 min-height:  565px;
 }
 }

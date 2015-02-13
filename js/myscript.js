@@ -74,7 +74,9 @@ $(document).ready(function() {
   /* Update hash based on tab, basically restores browser default behaviour to
      fix bootstrap tabs */
   $(document.body).on("click", "a[data-toggle]", function(event) {
-    location.hash = location.hash || this.getAttribute("href").substr(1); scrollTo(0,0);
+	if (this.getAttribute("href")) {
+    location.hash = this.getAttribute("href").substr(1); scrollTo(0,0);
+}
   });
 });
  
