@@ -45,6 +45,7 @@ $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger
 
 
 //Clicking on accordion scrolls to the header
+
  $(function () {
     $('#accordion').on('shown.bs.collapse', function (e) {
     var target = $('[data-toggle="collapse"][href="#'+ $(e.target).attr('id')+ '"]'
@@ -56,6 +57,7 @@ $('#myNavbar a[href="' + $(this).attr('href') + '"][data-toggle="tab"]').trigger
         
 });
 });
+
 
 //Enable bookmarking, linking tabs from outside, etc
 $(document).ready(function() {
