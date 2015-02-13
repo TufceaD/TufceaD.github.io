@@ -51,7 +51,6 @@ textarea {
     max-width: 100%; 
 }
 
-
 .panel-title{
 	font-size:2em;
 }
@@ -76,10 +75,80 @@ textarea {
 }
 
 
+/* Home picture */
 
+#homePicture {
+width: 500px;
+padding: 1% 0% 2% 4%;
+float: right;
+}
 
+@media (max-width: 768px) {
+ #homePicture {
+width: 100%;
+padding: 1% 2% 2% 2%;
+}
+}
 
+@media (min-width: 769px) and (max-width: 1200px) {
+ #homePicture {
+width: 300px;
+padding: 1% 0% 2% 2%;
+}
+}
 
+/* Accordion and about me picture*/
+
+#accordion{
+width: 50%;
+float: none;
+}
+
+#aboutPicture{
+width: 50%;
+padding: 0% 0% 2% 2%;
+float: right;
+}
+
+#about {
+min-height:  810px;
+}
+
+@media (max-width: 768px) {
+ #aboutPicture {
+width: 100%;
+padding: 0% 2% 2% 2%;
+float: none;
+}
+
+#accordion{
+width: 100%;
+float: none;
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+ #aboutPicture {
+width: 40%;
+padding: 0% 0% 2% 2%;
+float: right;
+}
+
+#accordion{
+width: 60%;
+}
+}
+@media (min-width: 769px) and (max-width: 992px) {
+#about.jumbotron {
+min-height:  450px;
+}
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+#about.jumbotron {
+min-height:  565px;
+}
+}
 /* Mix it up styling */
 
 #porfolio .mix{
@@ -90,6 +159,7 @@ textarea {
   padding: 2%;
   background: #333;
   color: #eee;
+  margin-top: 4%;
 }
 
 
