@@ -99,8 +99,6 @@ textarea {
   background: #666;
   border: 0;
   color: #ddd;
-  font-size: 16px;
-  font-weight: 300;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -116,13 +114,15 @@ textarea {
 .container-mix{
   padding: 2% 2% 0;
   text-align: justify;
-  font-size: 0.1px;
   background: #68b8c4;
   
   -webkit-backface-visibility: hidden;
 }
 
-.container-mix .mix,
+.container-mix .mix{
+  display: inline-block;
+  width: 49%;
+}
 .container-mix .gap{
   display: inline-block;
   width: 49%;
@@ -132,47 +132,114 @@ textarea {
   text-align: left;
   background: #03899c;
   margin-bottom: 2%;
+  padding-bottom: 0;
   display: none;
 }
 
-.container-mix .mix.category-1{
-  border-top: 2px solid limegreen;
+.container-mix .mix.category-JS{
+  border-top: 4px solid limegreen;
 }
 
-.container .mix.category-2{
-  border-top: 2px solid yellow;
+.container .mix.category-HTML{
+  border-top: 4px solid yellow;
+}
+
+.container .mix#MoreToCome{
+  border-top: 4px solid red;
 }
 
 .container-mix .mix:after{
-  content: attr(data-myorder);
+  content: '';
   color: white;
-  font-size: 16px;
   display: inline-block;
   vertical-align: top;
-  padding: 4% 8%;
-  font-weight: 700;
+  padding: 4% 8%; 
 }
 
 .container .mix:before{
   content: '';
   display: inline-block;
-  padding-top: 60%;
+  padding-top: 10px;
 }
 
-@media all and (min-width: 420px){
-  .container .mix,
+.container-mix .container{
+ position: relative;
+}
+
+.container-mix .container img{
+width: 92%;
+left: 4%;
+bottom: -4%;
+position: absolute;
+}
+ .container-mix .container p{
+color: black;
+text-align: center;
+}
+
+
+@media all and (min-width: 480px){
+  .container .mix{
+	width: 100%;
+	}
+  .container .gap{
+    width: 100%;
+	}
+  .container-mix .container{
+	height: 350px;
+	}
+  .container-mix .container p{
+	font-size: 150%;
+	
+	}
+}
+@media all and (min-width: 768px){
+  .container .mix{
+	width: 49%;
+	}
+  .container .gap{
+    width: 49%;
+	}
+   .container-mix .container{
+	height: 200px;
+	}
+  .container-mix .container p{
+	font-size: 125%;
+	}
+}
+
+@media all and (min-width: 992px){
+  .container .mix{
+	width: 49%;
+	}
+  .container .gap{
+    width: 49%;
+	}
+   .container-mix .container{
+	height: 250px;
+	}
+  .container-mix .container p{
+	font-size: 125%;
+	}
+}
+
+@media all and (min-width: 1200px){
+  .container .mix{
+	width: 31%;
+	}
   .container .gap{
     width: 31%;
-  }
-}
+	}
+  
+     .container-mix .container{
+	height: 180px;
+	}
+  .container-mix .container p{
+	font-size: 100%;
+	}
 
-@media all and (min-width: 640px){
-  .container .mix,
-  .container .gap{
-    width: 24.5%;
-  }
-}
 
+}
 
 
 

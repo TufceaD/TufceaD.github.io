@@ -82,10 +82,10 @@
 		<div class="jumbotron tab-pane fade in active well" id="home">
 		
 			<h1>Welcome to my personal site! </h1> 
-	
-			<div class="alert alert-danger text-center" role="alert">Warning! Website still under construction</div>
 			
-			<p>I am currently looking for a job! <a class="custom-tab" href="#contact">Hire me!</a></p>
+			<p>I am currently looking for a job! Learn more <a class="custom-tab" href="#about">about me</a>, check out <a class="custom-tab" href="#projects">my projects</a> and if you like what you see, why don't you <a class="custom-tab" href="#contact">hire me </a>? </p>
+			
+			<h2>Why hire someone with a mathematics and/or physics background? </h2>
 			
 			<p> Mathematicians have always been known for their extreme attention to detail and with good cause: It only takes one counter example to disprove a theorem. But by the same token, it only takes one bug for an angry client to call you in the middle of the night. Sometimes there's no other way around it, you just gotta sit down and get dirty, double check all your edge-cases and test everything you can (hopefully you're automating that!)</p>
 	
@@ -109,7 +109,12 @@
             <div class="panel-body">
 				<p>My name is Daniel Tufcea and I am a <span id="my_age"></span> years old graduate trying to become the best version of himself. I believe in continually learning new things and working on your weaknesses as a path to self-improvement. </p>
 			
-				<p>I aspire to be a developer, master new technologies and build cool stuff. I have experience with MATLAB, Python, Java and a little bit of C++. I am currently learning web development: HTML5, CSS3, Javascript (jQuery, AnglularJS), mySQL, PHP. In the future, I plan to try out some graphics and game development through <a href="http://peerjs.com">PeerJs</a>, <a href="http://threejs.org">ThreeJS</a> and <a href="http://paperjs.org">PaperJS</a>. I have heard good things about and plan to check out Ruby on Rails and Django. </p>
+				<p>I want to master new technologies and build cool stuff. I have experience with MATLAB, Python, Java and a little bit of C++. I am currently learning: HTML5, CSS3, Javascript, mySQL. </p>
+				
+				<p> My current project is a Javascript interactive website illustrating quantum tunnelling using <a href="http://paperjs.org">PaperJS</a>. It is almost ready!
+				</p>
+				
+				<p>In the future, I plan to try out some graphics and game development through <a href="http://peerjs.com">PeerJs</a> and <a href="http://threejs.org">ThreeJS</a>. I have heard good things about and plan to check out Ruby on Rails and Django. </p>
             </div>
         </div>
 		</div>
@@ -145,7 +150,6 @@
 			
 				<p> I also support open source because, as a scientist, I value the gathering and sharing of knowledge. I believe that sharing and reviewing code as well as giving and receiving feedback is the best way to learn and progress in the long run, both as a society and as an individual. There is no need to reinvent the wheel when we stand on the shoulders of giants.</p>
 			
-				<p>There is an unfortunate social need to associate a face to the success of great projects, whereby we only acknowledge the giants of science or glorify the CEO as the man behind the company. However, there are often dozens, hundreds or even thousands of people working in collaboration, each bringing their own expertise without which projects and advancements could never see life. I am thankful for their work and I hope my contributions will shape the future of mankind in their own ways.</p>
             </div>
         </div>
 		
@@ -174,31 +178,48 @@
 		<div class="jumbotron tab-pane fade well" id="projects">
 			<h1>Projects</h1> 
 			
-			<div class="alert alert-danger text-center" role="alert">Warning! Section under construction</div>
+			
 			
 			<div class="controls btn-group-justified" role="group">
 			<div class="container">
 			<div class="row">					
 			<button class="filter btn-mix btn-responsive col-xs-4 col-sm-4 col-md-2" data-filter="all"> Show All</button>
-			<button class="filter btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-filter=".category-1"> Category 1</button>
-			<button class="filter btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-filter=".category-2"> Category 2</button>
+			<button class="filter btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-filter=".category-JS"> Javascript</button>
+			<button class="filter btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-filter=".category-HTML"> HTML/CSS/JS</button>
 			<button class="sort btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-sort="default"> Default</button>
-			<button class="sort btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-sort="myorder:asc"> Ascending</button>
-			<button class="sort btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-sort="myorder:desc"> Descending</button>
+			<button class="sort btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-sort="myorder:desc"> Newest</button>
+			<button class="sort btn-mix btn-responsive  col-xs-4 col-sm-4 col-md-2" data-sort="myorder:asc"> Oldest</button>
 			</div>
 			</div>
 			</div>
 			
 			<div id="portfolio" class="container-mix">
 			
-			<div class="mix category-1" data-myorder="2"> 2</div>
-			<div class="mix category-2" data-myorder="4">4</div>
-			<div class="mix category-1" data-myorder="1">1</div>
-			<div class="mix category-2" data-myorder="8">8</div>
-			<div class="mix category-1" data-myorder="3">3</div>
-			<div class="mix category-2" data-myorder="5">5</div>
-			<div class="mix category-1" data-myorder="6">6</div>
-			<div class="mix category-2" data-myorder="7">7</div>
+			<div class="mix category-JS" data-myorder="2"> 
+			<div class="container" >
+			<p> Javascript quantum tunnelling </p>
+			<a href="http://tufcead.github.io/QuantumTunneling/"><img src="assets/QuantumTunnelling.png" > 
+			</img></a>
+			
+			</div>
+			</div>
+			
+			<div class="mix category-HTML" data-myorder="1">
+			<div class="container" >
+			<p> This very website made with Bootstrap</p>
+			<a data-toggle="tab" href="#home">
+			<img src="assets/MyWebsite.png"> 
+			</img></a>
+			</div>
+			</div>
+			
+			<div class="mix" data-myorder="NaN" id="MoreToCome">
+			<div class="container" >
+			<p> More to come soon! </p>
+			<img src="assets/NewProject.png"> 
+			</img>
+			</div>
+			</div>
 			
 			<div class="gap"></div>
 			<div class="gap"></div>

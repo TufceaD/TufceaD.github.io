@@ -1,5 +1,4 @@
 //Toggle drop-down menu on hover
-
 if (document.documentElement.clientWidth > 992) {
 	
 	$( document ).ready(function() {
@@ -84,3 +83,27 @@ $(window).on('popstate', function() {
   $('a[href=' + anchor + ']').tab('show');
 });
 
+// resize mixitup container when screen is very small
+
+function setMixContainerHeight(){
+var h = $(window).height();
+        var w = $(window).width();
+
+        if(w<768) {
+            $('.container-mix .container').css({'height': w/2});
+        }
+        else if (w<992){ 
+			$('.container-mix .container').css({'height': 200});
+        } else if (w < 1200){
+			$('.container-mix .container').css({'height': 250});
+		} else{
+			$('.container-mix .container').css({'height': 180});
+		}
+}
+
+$(document).ready(function() {
+	setMixContainerHeight();
+    $(window).resize(function() {
+        setMixContainerHeight();
+    });
+});
