@@ -34,6 +34,7 @@ body > .wrapper {
 }
 
 
+
 /* Styling the fading effect when switching tabs*/
 
 .fade {
@@ -96,8 +97,18 @@ width: 300px;
 padding: 1% 0% 2% 2%;
 }
 }
+/* Make contact page slimmer */
+#contact {
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
 
 /* Accordion and about me picture*/
+
+.panel-heading {
+	cursor: pointer;
+}
 
 #accordion{
 width: 50%;
